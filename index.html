@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-portfolio de Abdelkerim Baraou – BUT GEA Draguignan</title>
+<style>
+:root{--bg:#f4f6f8;--card:#fff;--ink:#14213d;--muted:#566175;--accent:#a8823f;--line:#d9dee6}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1626;--card:#18233b;--ink:#eef1f6;--muted:#a6b0c3;--accent:#d2ad6a;--line:#2a3856}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0 0 .5em}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+nav{position:sticky;top:0;z-index:5;background:var(--ink);display:flex;flex-wrap:wrap;gap:4px 18px;padding:12px 5vw;justify-content:center}
+nav a{color:#f4f6f8;text-decoration:none;font-size:15px;padding:4px 2px;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--accent)}
+header{padding:64px 5vw 48px;display:flex;flex-wrap:wrap;gap:36px;align-items:center;justify-content:center;max-width:1000px;margin:0 auto}
+.photo{width:190px;height:190px;border-radius:50%;border:3px dashed var(--accent);display:grid;place-items:center;text-align:center;color:var(--muted);font-size:14px;padding:16px}
+.intro{flex:1 1 320px}
+h1{font-size:clamp(2rem,5vw,3rem)}
+.sub{color:var(--accent);font-size:1.15rem;font-weight:600;margin:0 0 14px}
+section{max-width:1000px;margin:0 auto;padding:44px 5vw;border-top:1px solid var(--line)}
+section>p{max-width:68ch}
+h2{font-size:1.8rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:20px}
+.card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px;padding:18px 20px;text-decoration:none;display:block}
+a.card{transition:transform .15s}
+a.card:hover{transform:translateY(-3px)}
+.card h3{font-size:1.1rem;margin-bottom:.3em}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.todo{color:var(--accent);font-weight:600}
+details{background:var(--card);border:1px solid var(--line);border-radius:6px;margin-top:12px;padding:0 18px}
+summary{cursor:pointer;padding:14px 0;font-weight:600}
+details p{margin:0 0 16px;color:var(--muted)}
+footer{text-align:center;padding:32px 5vw;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<nav aria-label="Menu principal">
+<a href="#accueil">Accueil</a><a href="#apropos">À propos</a><a href="#parcours">Parcours</a><a href="#competences">Compétences</a><a href="#contact">Contact</a>
+</nav>
+
+<header id="accueil">
+<div class="photo" role="img" aria-label="Espace réservé pour ma photo"><span class="todo">[À COMPLÉTER]<br>Ma photo</span></div>
+<div class="intro">
+<h1>E-portfolio de Abdelkerim Baraou</h1>
+<p class="sub">BUT GEA Draguignan</p>
+<p>Je suis étudiant en première année de BUT Gestion des Entreprises et des Administrations à l'IUT de Toulon, campus de Draguignan. Mon objectif : devenir gestionnaire de patrimoine. Ce site rassemble mon parcours, mes compétences et mes projets.</p>
+</div>
+</header>
+
+<section aria-label="Raccourcis">
+<h2>Explorer mon e-portfolio</h2>
+<div class="grid">
+<a class="card" href="#apropos"><h3>À propos</h3><p>Qui je suis et mon projet professionnel.</p></a>
+<a class="card" href="#parcours"><h3>Parcours</h3><p>Ma formation, mes SAE et mes expériences.</p></a>
+<a class="card" href="#competences"><h3>Compétences</h3><p>Ce que je maîtrise et ce que je développe.</p></a>
+<a class="card" href="#contact"><h3>Contact</h3><p>Me joindre facilement.</p></a>
+</div>
+</section>
+
+<section id="apropos">
+<h2>À propos</h2>
+<p>Je m'appelle Abdelkerim Baraou. <span class="todo">[À COMPLÉTER]</span> Ma présentation personnelle : âge, centres d'intérêt, qualités.</p>
+<div class="grid">
+<div class="card"><h3>Projet professionnel</h3><p>Devenir gestionnaire de patrimoine. <span class="todo">[À COMPLÉTER]</span> Pourquoi ce métier, quelles étapes après le BUT.</p></div>
+<div class="card"><h3>Projet personnel</h3><p><span class="todo">[À COMPLÉTER]</span></p></div>
+</div>
+</section>
+
+<section id="parcours">
+<h2>Parcours</h2>
+<p>Ma formation au BUT GEA à l'IUT de Toulon (campus de Draguignan), mes projets et mes expériences.</p>
+<details open><summary>Bachelor GEA</summary><p><span class="todo">[À COMPLÉTER]</span> Parcours choisi, organisation de la formation, ce que j'y apprends.</p></details>
+<details><summary>SAE et projets</summary><p><span class="todo">[À COMPLÉTER]</span> Pour chaque SAE : contexte, mon rôle, résultat, ce que j'en retiens.</p></details>
+<details><summary>Expériences</summary><p><span class="todo">[À COMPLÉTER]</span> Stages, jobs, bénévolat.</p></details>
+<details><summary>Outils numériques</summary><p><span class="todo">[À COMPLÉTER]</span> Logiciels et outils que j'utilise.</p></details>
+<details><summary>CV</summary><p><span class="todo">[À COMPLÉTER]</span> Lien vers mon CV.</p></details>
+<details><summary>Bilans et évolution</summary><p><span class="todo">[À COMPLÉTER]</span> Mon bilan de chaque semestre et mes progrès.</p></details>
+</section>
+
+<section id="competences">
+<h2>Compétences</h2>
+<p><span class="todo">[À COMPLÉTER]</span> Mes compétences du BUT GEA, chacune illustrée par un exemple concret.</p>
+<div class="grid">
+<div class="card"><h3>Compétence 1</h3><p class="todo">[À COMPLÉTER]</p></div>
+<div class="card"><h3>Compétence 2</h3><p class="todo">[À COMPLÉTER]</p></div>
+<div class="card"><h3>Compétence 3</h3><p class="todo">[À COMPLÉTER]</p></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Pour échanger avec moi : <span class="todo">[À COMPLÉTER]</span> adresse e-mail, profil LinkedIn.</p>
+</section>
+
+<footer>© 2026 Abdelkerim Baraou – BUT GEA, IUT de Toulon, Draguignan</footer>
+</body>
+</html>
